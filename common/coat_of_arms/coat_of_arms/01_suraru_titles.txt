@@ -1,0 +1,51 @@
+harlan = {
+	pattern = "pattern__solid_designer.dds"
+	color1 = "brown"
+	color2 = "blue"
+	color3 = "red"
+	colored_emblem = {
+		texture = "ce_eagle_small.dds"
+		color1 = "blue"
+		color2 = "blue"
+		color3 = "yellow_light"
+		instance = {
+			position = { 0.5 0.5 }
+			scale = { 0.9 0.9 }
+		}
+	}
+}
+
+tanzair = {
+	pattern = "pattern_checkers_02.dds"
+	color1 = "white"
+	color2 = "purple"
+	color3 = "purple"
+	colored_emblem = {
+		color1 = "white"
+		texture = "ce_khajiit_moons_02.dds"
+		instance = {
+			position = { 0.250000 0.300000 }
+			scale = { 0.500000 0.500000 }
+			depth = 2.010000
+		}
+	}
+
+	colored_emblem = {
+		color1 = "yellow_light"
+		texture = "ce_key_02.dds"
+		instance = {
+			position = { 0.750000 0.300000 }
+			scale = { 0.500000 0.500000 }
+			depth = 1.010000
+		}
+	}
+
+	colored_emblem = {
+		color1 = "black"
+		texture = "ce_khajiit_claw_01.dds"
+		instance = {
+			position = { 0.500000 0.700000 }
+			scale = { 0.500000 0.500000 }
+		}
+	}
+}

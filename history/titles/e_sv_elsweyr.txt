@@ -1,0 +1,26 @@
+c_alcrest = {
+	3450.1.1 = { holder = sil_1000 }
+	3500.11.15 = { holder = 0 }
+	3508.3.1 = { holder = sil_1002 }
+}
+
+c_alabaster = {
+	3488.10.22 = { holder = tazair_1000 }
+}
+
+b_tapala = {
+	3483.2.12 = { 
+		holding = city_holding 
+		holder = crowe_1000
+		liege = c_torval
+	}
+}
+
+c_riverhold = {
+	3491.7.21 = { holder = harlan_1003 }
+}
+
+
+c_dune = {
+	3469.1.1 = { holder = raskinka_1000 }	
+}

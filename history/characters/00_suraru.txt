@@ -1,0 +1,627 @@
+﻿# Segal
+harlan_1000 = {
+	name = "Segal"
+	dynasty = harlan
+	religion = breton_cult
+	culture = iliac
+#	dna = harlan_1000_dna_entry
+	sexuality = heterosexual
+
+	3461.7.21 = { birth = yes }
+	3482.1.1 = { add_spouse = harlan_1001 }
+	3482.2.12 = { 
+		set_relation_friend = { target = character:harlan_1002 reason = friend_generic_history }
+		set_relation_friend = { target = character:harlan_1003 reason = friend_generic_history }
+	}
+	3488.1.1 = { employer = guimard_1011 }
+	3498.12.1 = { remove_spouse = harlan_1001 }
+}
+
+# Emile
+harlan_1001 = {
+	name = "Emile"
+	dynasty = harlan
+	culture = reachfolk
+	religion = old_gods
+	female = yes
+#	dna = harlan_1001_dna_entry
+	sexuality = heterosexual
+
+	trait = necromancer
+
+	3462.7.21 = { birth = yes }
+	3488.1.1 = { employer = guimard_1011 }
+}
+
+# Hazdara
+harlan_1002 = {
+	name = "Ra'Hazdara"
+	dynasty = harlan
+	religion = baandari
+	culture = baandari
+#	dna = harlan_1002_dna_entry
+	sexuality = heterosexual
+	trait = furstock_cathay_raht
+	
+	trait = education_martial_3
+
+	3467.7.21 = { birth = yes }
+	3483.1.1 = { employer = cumberland_1004 }
+	3486.1.1 = { add_spouse = harlan_1003 }
+	3488.2.12 = { 
+		trait = deviant
+		trait = fornicator
+		trait = adulterer
+		remove_spouse = harlan_1003 
+	}
+}
+
+# Aydith
+harlan_1003 = {
+	name = "Aydith-Jota"
+	dynasty = nabiit
+	religion = manypathsdance
+	culture = anequinan
+	female = yes
+	dna = harlan_1003_dna_entry
+	sexuality = heterosexual
+	trait = furstock_dagi
+	trait = education_learning_4
+
+	3471.7.21 = { birth = yes }
+	3471.7.21 = { employer = raispoor_001 }
+	3483.1.1 = { employer = cumberland_1004 }
+	3486.1.1 = { dynasty = harlan }
+	3488.2.12 = { employer = shabu_001 }
+	3490.1.1 = { dynasty = rasinka }
+	3499.12.12 = { employer = tharn_227 }
+	3502.1.30 = { 
+		trait = possessed_1
+		trait = lunatic_1
+		dynasty = harlan
+	}
+}
+
+# Sura
+harlan_1004 = {
+	name = "Suraru"
+	dynasty = harlan
+	religion = breton_cult
+	culture = anequinan
+	female = yes
+	dna = harlan_1004_dna_entry
+	sexuality = heterosexual
+	trait = furstock_cathay
+	trait = sign_lord
+	
+	father = harlan_1002
+	mother = harlan_1003
+	
+	disallow_random_traits = yes
+	trait = education_learning_1 
+	
+	trait = honest 
+	trait = compassionate 
+	trait = forgiving 
+
+	trait = physique_bad_1 
+	trait = loyal 
+	trait = arcana_good_3 
+	trait = shrewd 
+	trait = poet 
+
+	3486.3.22 = { birth = yes }
+	3488.2.12 = { set_relation_guardian = { target = character:harlan_1000 } }
+	
+	3498.12.1 = { trait = adventurer }
+	
+	3500.1.30 = { 
+		name = "M'Sura"
+		religion = twomoonsdance
+		trait = p_dv_akatosh
+		trait = mystic_3 
+		trait = adventurer 
+		trait = deviant 
+		trait = fornicator 
+	}
+	
+	3504.1.1 = { 
+		name = "Sura-zeri"
+		trait = necromancer
+		trait = reclusive 
+		trait = lunatic_1
+		set_relation_lover = { target = character:tazair_1002 }
+	}
+	
+	3505.12.21 = { 
+		death = {death_reason = death_suicide }
+	}
+	
+	portrait_override = {	# Will override the character's appearance
+		portrait_modifier_overrides={
+				custom_beards=female_empty
+				custom_hair=female_hair_northern_01
+				custom_clothes=female_clothes_secular_fp2_iberian_muslim_war_nobility_01
+				custom_headgear=female_headgear_religious_monk_02
+				custom_legwear=female_legwear_secular_western_common_01
+				cloaks=female_cloaks_secular_fp1_nobility_02
+		}
+	}
+}
+
+# Notsu
+harlan_1005 = {
+	name = "Notsu"
+	dynasty = harlan
+	religion = breton_cult
+	culture = anequinan
+	female = yes
+	dna = harlan_1005_dna_entry
+	sexuality = asexual
+	trait = furstock_cathay 
+	trait = sign_lover 
+	trait = bastard 
+
+	disallow_random_traits = yes
+	trait = education_martial_1
+	skill = { 0 5 0 5 3 10 }
+	
+	trait = callous 
+	trait = vengeful 
+	trait = wrathful 
+	
+	father = harlan_1002
+
+	3488.2.12 = { 
+		birth = yes
+		set_relation_guardian = { target = character:harlan_1000 } # Segal Adopts Sura and Notsu
+		father = harlan_1000
+	}
+	
+	3498.12.1 = { 
+		trait = adventurer
+		set_relation_best_friend = { target = character:harlan_1004 }
+	}
+	
+	3500.1.30 = {
+		trait = lycan_character 
+		trait = berserker 
+		trait = hunter_3 
+		trait = blademaster_3
+	}
+		
+	3502.1.30 = { 
+		remove_trait = lycan_character
+		trait = one_eyed 
+	}
+	
+	3505.12.21 = { 
+		trait = depressed_1
+		trait = murderer
+	}
+	
+	3508.3.1 = { 
+		trait = p_dv_kynareth
+		employer = sil_1002
+		give_council_position = councillor_marshal
+		set_relation_friend = { target = character:crowe_1002 reason = friend_generic_history } # Friends with Ji'Raan
+	}
+	
+	portrait_override = {	# Will override the character's appearance
+		portrait_modifier_overrides={
+			custom_beards=female_empty
+			custom_hair=female_hair_western_02
+			custom_legwear=female_legwear_secular_mena_war_nobility_01
+			facepaint=facepaint_none
+			custom_headgear=female_empty
+			custom_cloaks=female_clothes_religious_almarula
+			custom_jewellery=female_empty
+			custom_clothes=female_clothes_secular_northern_war_nobility_01
+			custom_special=male_headgear_special_eye_patch_01
+		}
+	}
+}
+
+# Del Dad
+sil_1000 = {
+	name = "Sahima-ro"
+	dynasty = sil
+	religion = baandari
+	culture = pellitinian
+#	dna = sil_1000_dna_entry
+	sexuality = heterosexual
+	trait = furstock_pahmar
+
+	3450.1.1 = { birth = yes }
+	3500.11.15 = { death = {death_reason = death_execution_killer } }
+}
+
+# Del Mom
+sil_1001 = {
+	name = "Morra-ko"
+	dynasty = sil
+	religion = baandari
+	culture = pellitinian
+#	dna = sil_1001_dna_entry
+	sexuality = heterosexual
+	female = yes
+	trait = furstock_tojay_raht
+
+	3455.1.1 = { birth = yes }
+	3500.11.15 = { death = {death_reason = death_execution_killer } }
+}
+
+# Del
+sil_1002 = {
+	name = "Kithka-ma"
+	dynasty = sil
+	religion = baandari
+	culture = pellitinian
+	dna = sil_1002_dna_entry
+	female = yes
+	sexuality = heterosexual
+	trait = furstock_suthay
+	trait = sign_steed
+	
+	mother = sil_1001
+	father = sil_1000
+
+	disallow_random_traits = yes	
+	skill = { 5 0 5 0 5 0 }
+	
+	trait = craven 
+	trait = gregarious 
+	trait = trusting 
+	trait = compassionate 
+	trait = forgiving 
+	
+	trait = physique_bad_2
+	trait = arcana_good_2 
+	trait = beauty_good_2 
+	trait = intellect_good_1 
+	trait = base_arcana_3
+
+	3496.6.21 = { 
+		birth = yes
+		trait = charming 
+		trait = curious 
+	}
+	
+	3500.11.15 = { 
+		name = "Del'Kithka"
+		trait = p_kj_baandar
+		trait = adventurer
+	}
+	
+	3508.3.1 = { 
+		religion = twomoonsdance
+		set_relation_friend = { target = character:harlan_1005 reason = friend_generic_history }
+		set_relation_friend = { target = character:raskinka_1001 reason = friend_generic_history }	# Friends with Jithka
+		set_relation_friend = { target = character:tazair_1003 reason = friend_generic_history }	# Friends with Kiri
+		set_relation_friend = { target = character:crowe_1002 reason = friend_generic_history } # Friends with Ji'Raan
+		set_relation_friend = { target = character:crowe_1003 } # Friends with Alex
+		set_relation_guardian = { target = character:harlan_1005 } # Notsu adopts Del
+		mother = harlan_1005
+		dynasty = harlan
+		set_relation_crush = { target = character:raskinka_1001 } # Crush on Jithka
+	}
+	
+	portrait_override = {	# Will override the character's appearance
+		portrait_modifier_overrides={
+			custom_hair=female_hair_indian_03
+			custom_beards=female_empty
+			custom_clothes=female_clothes_secular_fp1_nobility_02_high
+			cloaks=no_cloak
+			custom_legwear=girl_empty
+			custom_jewellery=girl_empty
+			custom_cloaks=girl_empty
+			custom_headgear=girl_empty
+			facepaint=facepaint_none
+		}
+	}
+}
+
+# Ra'Khim
+raskinka_1000 = {
+	name = "Ra'Khim"
+	dynasty = rasinka
+	religion = twomoonsdance
+	culture = pellitinian
+#	dna = raskinka_1000_dna_entry
+	sexuality = heterosexual
+	trait = furstock_cathay_raht
+	
+	trait = education_martial_4
+
+	3469.7.21 = { birth = yes }	
+	3469.7.21 = { employer = shabu_001 }
+	3490.1.1 = { add_spouse = harlan_1003 }
+	3508.3.1 = { death = {death_reason = death_execution_killer } }
+}
+
+# Jithka
+raskinka_1001 = {
+	name = "Jithka-m"
+	dynasty = rasinka
+	religion = twomoonsdance
+	culture = pellitinian
+#	dna = raskinka_1001_dna_entry
+	sexuality = heterosexual
+	trait = furstock_cathay
+	trait = sign_lover 
+	
+	father = raskinka_1000
+	mother = harlan_1003
+	
+	trait = education_martial_4
+
+	3491.2.2 = { birth = yes }
+	3505.1.2 = { 
+		name "Vi'Jithka"
+		trait = adventurer 
+		set_relation_friend = { target = character:tazair_1003 reason = friend_generic_history }	# Friends with Kiri
+		set_relation_crush = { target = character:tazair_1003 } # Crush on Kiri
+	}
+	3505.6.2 = { name = "Jithka-vit" }
+	3508.3.1 = { 
+		employer = sil_1002
+		give_council_position = councillor_spouse
+	}
+}
+
+# Ashi dad
+tazair_1000 = {
+	name = "Jehsen-dar"
+	dynasty = tazair
+	religion = twomoonsdance
+	culture = pellitinian
+#	dna = tazair_1000_dna_entry
+	sexuality = heterosexual
+	trait = furstock_cathay
+
+	3468.10.22 = { birth = yes }
+	3468.10.22 = { employer = alabaster_001 }
+	3487.10.22 = { add_spouse = tazair_1001 }
+	3494.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+
+# Ashi mom
+tazair_1001 = {
+	name = "Ara"
+	dynasty = tazair
+	female = yes
+	religion = twomoonsdance
+	culture = pellitinian
+#	dna = tazair_1001_dna_entry
+	sexuality = heterosexual
+	trait = furstock_cathay
+
+	3468.10.22 = { birth = yes }
+	3468.10.22 = { employer = alabaster_001 }
+	3494.1.1 = { death = { death_reason = death_bubonic_plague } }
+}
+
+# Ashi
+tazair_1002 = {
+	name = "Dar'Ashi"
+	dynasty = tazair
+	religion = twomoonsdance
+	culture = pellitinian
+	dna = tazair_1002_dna_entry
+	sexuality = bisexual
+	trait = furstock_cathay
+	trait = sign_tower
+	
+	father = tazair_1000
+	mother = tazair_1001
+
+	skill = { 15 9 8 10 5 5 }
+	trait = education_intrigue_1
+	trait = deceitful
+	trait = greedy
+	trait = beauty_good_2
+		
+	3488.10.29 = { birth = yes }
+	3488.10.29 = { employer = alabaster_001 }
+	3502.1.2 = { trait = adventurer }
+	3508.3.1 = { 
+		employer = sil_1002
+		give_council_position = councillor_steward
+	}	
+	
+	portrait_override = {	# Will override the character's appearance
+		portrait_modifier_overrides={
+			custom_hair=male_hair_indian_01
+			custom_clothes=male_clothes_secular_fp1_nobility_01_low
+			facepaint=facepaint_none
+			custom_headgear=male_empty
+			custom_beards=male_empty
+			custom_cloaks=male_cloaks_secular_fp1_nobility_02
+			custom_jewellery=male_empty
+			custom_legwear=male_legwear_secular_western_common_01
+		}
+	}
+}
+
+# Kiri
+tazair_1003 = {
+	name = "Kiri-ko"
+	dynasty = tazair
+	religion = twomoonsdance
+	culture = pellitinian
+	female = yes
+	dna = tazair_1003_dna_entry
+	sexuality = bisexual
+	trait = furstock_suthay_raht
+	trait = sign_lover 
+	
+	father = tazair_1000
+	mother = tazair_1001
+	
+	trait = education_learning_4		
+	skill = { 8 5 5 9 6 5 }
+	trait = greedy
+	trait = patient
+	trait = beauty_good_2
+	trait = intellect_good_1
+	trait = physique_bad_1
+	trait = fecund
+
+	3490.2.15 = { birth = yes }
+	3490.1.15 = { employer = alabaster_001 }
+	3502.1.2 = { trait = adventurer }
+	3508.3.1 = { 
+		employer = sil_1002
+		give_council_position = councillor_court_chaplain
+	}
+	
+	portrait_override = {	# Will override the character's appearance
+		portrait_modifier_overrides={
+			custom_hair=female_hair_sub_saharan_02
+			custom_beards=female_empty
+			custom_legwear=female_empty
+			custom_clothes=female_clothes_secular_steppe_war_nobility_01_low
+			facepaint=facepaint_none
+			custom_headgear=female_empty
+			custom_cloaks=female_empty
+			custom_jewellery=female_empty
+		}
+	}
+}
+
+# Ji'Raan dad
+crowe_1000 = {
+	name = "Ahnurr"
+	dynasty = crowe
+	religion = twomoonsdance
+	culture = pellitinian
+#	dna = crowe_1000_dna_entry
+	sexuality = heterosexual
+	trait = furstock_suthay
+	
+	trait = education_martial_2
+
+	3463.2.12 = { birth = yes }
+	3463.2.12 = { employer = mane_002 }
+	3482.10.22 = { add_spouse = crowe_1001 }
+	3502.1.2 = { death = yes }	
+}
+
+# Ji'Raan mom
+crowe_1001 = {
+	name = "Fado"
+	dynasty = crowe
+	religion = twomoonsdance
+	culture = pellitinian
+	female = yes
+#	dna = crowe_1001_dna_entry
+	sexuality = heterosexual
+	trait = furstock_cathay_raht
+	
+	trait = education_intrigue_2
+
+	3463.2.12 = { birth = yes }
+	3463.2.12 = { employer = mane_002 }
+	3502.1.2 = { trait = adventurer }	
+	3502.1.2 = { death = yes }	
+}
+
+# Ji'Raan
+crowe_1002 = {
+	name = "Ji'Raan"
+	dynasty = crowe
+	religion = twomoonsdance
+	culture = pellitinian
+#	dna = crowe_1002_dna_entry
+	sexuality = homosexual
+	trait = furstock_suthay
+	
+	father = crowe_1000
+	mother = crowe_1001
+	
+	trait = education_intrigue_3
+
+	3483.2.12 = { birth = yes }
+	3483.2.12 = { employer = mane_002 }
+	3502.1.2 = { 
+		trait = adventurer 
+		trait = one_eyed
+	}
+	3508.3.1 = { 
+		employer = sil_1002
+		give_council_position = councillor_spymaster
+	}
+	
+	portrait_override = {	# Will override the character's appearance
+		portrait_modifier_overrides={
+			custom_hair=male_hair_western_07
+			custom_beards=male_empty
+			custom_jewellery=male_empty
+			custom_legwear=male_empty
+			custom_clothes=clothes_altmer_male_common_war_01
+			custom_cloaks=male_clothes_secular_ashlander_scarf_02_low
+			facepaint=facepaint_none
+			custom_headgear=male_empty
+			custom_special=male_headgear_special_eye_patch_01
+		}
+	}
+}
+
+# Alex
+crowe_1003 = {
+	name = "Alexandria"
+	dynasty = crowe
+	religion = imperial_cult
+	culture = pellitinian
+	female = yes
+#	dna = crowe_1003_dna_entry
+	sexuality = bisexual
+	trait = furstock_suthay
+	
+	father = crowe_1002
+	real_father = 0
+
+	3492.2.2 = { birth = yes }
+	3490.2.2 = { employer = mane_002 }
+	3502.1.2 = { 
+		trait = adventurer
+		set_relation_guardian = { target = character:crowe_1002 } # Jiji adopts Alex
+	}
+	3508.3.1 = { 
+		employer = sil_1002
+		give_council_position = councillor_chancellor
+	}
+}
+
+# Ma'Hani
+crowe_1004 = {
+	name = "Ma'Hani"
+	dynasty = telvanni
+	religion = tribunal_temple
+	culture = pellitinian
+#	dna = crowe_1004_dna_entry
+	sexuality = bisexual
+	trait = furstock_suthay
+	
+	father = crowe_1002
+
+	3495.1.1 = { birth = yes }
+	3493.1.1 = { employer = otheri_2 }
+	3502.1.2 = { 
+		trait = adventurer
+		set_relation_guardian = { target = character:crowe_1002 } # Jiji adopts Ma'Hani
+	}
+	
+	portrait_override = {	# Will override the character's appearance
+		portrait_modifier_overrides={
+			facepaint=facepaint_none
+			custom_headgear=boy_empty
+			custom_hair=no_hair
+			custom_jewellery=boy_empty
+			custom_legwear=male_legwear_secular_fp1_common_01
+			custom_clothes=male_clothes_secular_byzantine_war_nobility_01_low
+			custom_cloaks=male_clothes_secular_ashlander_scarf_02_low
+			custom_special=male_headgear_special_spectacles_01
+		}
+	}
+}

@@ -1,0 +1,31 @@
+﻿harlan = {
+	name = "Harlan"
+	culture = iliac
+	motto = "Only great pressure can create diamonds."
+}
+
+sil = {
+	name = "Sil"
+	culture = pellitinian
+}
+
+nabiit = {
+	name = "Nabiit"
+	culture = baandari
+}
+
+rasinka = {
+	name = "Rasinka"
+	culture = anequinan
+}
+
+tazair = {
+	name = "Tazair"
+	culture = pellitinian
+	motto = "Success Through Cleverness."
+}
+
+crowe = {
+	name = "Crowe"
+	culture = pellitinian
+}
